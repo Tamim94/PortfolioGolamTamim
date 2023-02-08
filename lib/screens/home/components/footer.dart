@@ -18,6 +18,10 @@ class FooterInfo extends StatelessWidget {
       child: Responsive.isMobileLarge(context)
           ? Column(
               children: [
+                Image.asset(
+                  'assets/images/bgg.jpg',
+                  fit: BoxFit.cover,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -31,10 +35,7 @@ class FooterInfo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Footers(
-                      label: "Certifications",
-                    ),
-                    Footers(
-                      label: "Diplomes",
+                      label: "Portfolio Tamim ©",
                     ),
                   ],
                 ),
@@ -57,7 +58,7 @@ class FooterInfo extends StatelessWidget {
                   Footers(
                     // value: 90
 
-                    label: " Portfolio Tamim ©",
+                    label: "Portfolio Tamim ©",
                   ),
                 ],
               ),

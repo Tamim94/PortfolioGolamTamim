@@ -28,21 +28,16 @@ List<Project> demo_projects = [
       link:"https://replit.com/@TAMIMGOLAM",
   ),
   Project(
-    title: "Futur",
+    title: "Projet IoT Arduino",
     description:
-    ".",
+    "Projet Arduino IOT , nous devions programmé une carte arduino a envoyé du data sur un site de feed(adafruit).",
      link: ""
   ),
   Project(
-    title: "Futur",
+    title: "Projet hackaton 2022 Arduino",
     description:
-    "Futur",
+    "Projet Arduino pendant le Hackathon 2022 ou nous devions programmé un MBOT a marqué des buts.",
     link:"",
   ),
-  Project(
-    title: "Futur",
-    description:
-    "Futur",
-    link:"",
-  ),
+
 ];

@@ -16,7 +16,12 @@ class Essentialinfo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
       child: Responsive.isMobileLarge(context)
           ? Column(
+
               children: [
+                Image.asset(
+                  'assets/images/bg.jpg',
+                  fit: BoxFit.cover,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -52,7 +57,7 @@ class Essentialinfo extends StatelessWidget {
                         value: 2,
                         text: "",
                       ),
-                      label: "Diplomes",
+                      label: "Diplômes",
                     ),
                   ],
                 ),
@@ -97,11 +102,12 @@ class Essentialinfo extends StatelessWidget {
                       value: 2,
                       text: "",
                     ),
-                    label: "Diplomes",
+                    label: "Diplômes",
                   ),
                 ],
               ),
             ),
+
     );
   }
 }
