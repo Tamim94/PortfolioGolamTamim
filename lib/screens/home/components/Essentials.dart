@@ -16,64 +16,52 @@ class Essentialinfo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
       child: Responsive.isMobileLarge(context)
           ? Column(
-
               children: [
-                Image.asset(
-                  'assets/images/bg.jpg',
-                  fit: BoxFit.cover,
+                Container(
+                  //Background of the block
+                  width: MediaQuery.of(context).size.width,
+                  height: 100,
+                  decoration: BoxDecoration(
+                      color: highColor.withOpacity(0.90),
+                      image: const DecorationImage(
+                          image: AssetImage("assets/images/bg.jpg"),
+                          opacity: 0.7,
+                          fit: BoxFit.cover)),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Essentials(
+                        counter: AnimatedCounter(
+                          value: 90,
+                          text: "%",
+                        ),
+                        label: "Anglais",
+                      ),
+                      Essentials(
+                        counter: AnimatedCounter(
+                          value: 90,
+                          text: "%",
+                        ),
+                        label: "Français",
+                      ),
+                    ],
+                  ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Essentials(
-                      counter: AnimatedCounter(
-                        value: 90,
-                        text: "%",
-                      ),
-                      label: "Anglais",
-                    ),
-                    Essentials(
-                      counter: AnimatedCounter(
-                        value: 90,
-                        text: "%",
-                      ),
-                      label: "Français",
-                    ),
-                  ],
-                ),
-                const SizedBox(height: defaultPadding),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Essentials(
-                      counter: AnimatedCounter(
-                        value: 2,
-                        text: "",
-                      ),
-                      label: "Certifications",
-                    ),
-                    Essentials(
-                      counter: AnimatedCounter(
-                        value: 2,
-                        text: "",
-                      ),
-                      label: "Diplômes",
-                    ),
-                  ],
-                ),
+                //const SizedBox(height: defaultPadding),
               ],
             )
-          : Container( //Background of the block
+          : Container(
+              //Background of the block
               width: MediaQuery.of(context).size.width,
               height: 100,
               decoration: BoxDecoration(
                   color: highColor.withOpacity(0.90),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                       image: AssetImage("assets/images/bg.jpg"),
                       opacity: 0.7,
                       fit: BoxFit.cover)),
 
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Essentials(
@@ -107,7 +95,6 @@ class Essentialinfo extends StatelessWidget {
                 ],
               ),
             ),
-
     );
   }
 }

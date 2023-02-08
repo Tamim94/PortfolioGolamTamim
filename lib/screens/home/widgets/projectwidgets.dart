@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_tamim/models/projects.dart';
 import 'package:portfolio_tamim/responsive.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:portfolio_tamim/models/projects.dart';
-import 'package:portfolio_tamim/screens/home/components/projects.dart';
 
 import '../../../constants.dart';
 
@@ -24,29 +22,29 @@ class ProjectCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            project.title!,
+            project.title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.subtitle2,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
-          Spacer(),
+          const Spacer(),
           Text(
-            project.description!,
+            project.description,
             maxLines: Responsive.isMobileLarge(context) ? 3 : 4,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(height: 1.5),
+            style: const TextStyle(height: 1.5),
           ),
-          Spacer(),
+          const Spacer(),
           TextButton(
             onPressed: () async {
-              if (await canLaunch (project.link ?? '')
+              if (await canLaunch (project.link)
               ) {
-              await launch(project.link ?? '');
+              await launch(project.link);
               } else {
               throw 'Could not launch ${project.link}';
               }
             },
-            child: Text(
+            child: const Text(
               "Link >>",
               style: TextStyle(color: primaryColor),
             ),

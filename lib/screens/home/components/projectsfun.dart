@@ -19,10 +19,10 @@ class MyProjects2 extends StatelessWidget {
       children: [
         Text(
           "\nMes projets pendant BTS 2020-2022",
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height:defaultPadding),
-        Responsive(
+        const Responsive(
           mobile: ProjectsGridView(
             crossAxisCount: 1,
             childAspectRatio: 1.7,
@@ -51,7 +51,7 @@ class ProjectsGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: demo_projects2.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: crossAxisCount,

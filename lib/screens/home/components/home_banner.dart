@@ -2,7 +2,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_tamim/responsive.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:video_player/video_player.dart';
 import '../../../constants.dart';
 
 class HomeBanner extends StatelessWidget {
@@ -31,19 +30,19 @@ class HomeBanner extends StatelessWidget {
                 Text(
                   "Portfolio Golam Tamim",
                   style: Responsive.isDesktop(context)
-                      ? Theme.of(context).textTheme.headline3!.copyWith(
+                      ? Theme.of(context).textTheme.displaySmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           )
-                      : Theme.of(context).textTheme.headline5!.copyWith(
+                      : Theme.of(context).textTheme.headlineSmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
                 ),
                 if (Responsive.isMobileLarge(context))
                   const SizedBox(height: defaultPadding / 2),
-                MyBuildAnimatedText(),
-                SizedBox(height: defaultPadding),
+                const MyBuildAnimatedText(),
+                const SizedBox(height: defaultPadding),
                 if (!Responsive.isMobileLarge(context))
                   ElevatedButton(
                     onPressed: () async {
@@ -55,12 +54,12 @@ class HomeBanner extends StatelessWidget {
                       }
                     },
                     style: TextButton.styleFrom(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                           horizontal: defaultPadding * 2,
                           vertical: defaultPadding),
                       backgroundColor: primaryColor,
                     ),
-                    child: Text(
+                    child: const Text(
                       "Le cursus Bachelor Data & App Design",
                       style: TextStyle(color: darkColor),
                     ),
@@ -83,20 +82,20 @@ class MyBuildAnimatedText extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTextStyle(
       // it applies same style to all the widgets under it
-      style: Theme.of(context).textTheme.subtitle1!,
+      style: Theme.of(context).textTheme.titleMedium!,
       maxLines: 1,
       child: Row(
         children: [
-          if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
+          if (!Responsive.isMobileLarge(context)) const FlutterCodedText(),
           if (!Responsive.isMobileLarge(context))
-            SizedBox(width: defaultPadding / 2),
-          Text("\n"),
+            const SizedBox(width: defaultPadding / 2),
+          const Text("\n"),
           Responsive.isMobile(context)
-              ? Expanded(child: AnimatedText())
-              : AnimatedText(),
+              ? const Expanded(child: AnimatedText())
+              : const AnimatedText(),
           if (!Responsive.isMobileLarge(context))
-            SizedBox(width: defaultPadding / 2),
-          if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
+            const SizedBox(width: defaultPadding / 2),
+          if (!Responsive.isMobileLarge(context)) const FlutterCodedText(),
         ],
       ),
     );
@@ -114,15 +113,15 @@ class AnimatedText extends StatelessWidget {
       animatedTexts: [
         TyperAnimatedText(
           " Stage en web à distance  Wix 2021 ",
-          speed: Duration(milliseconds: 60),
+          speed: const Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
           " Stage en web en  Wordpress 2022",
-          speed: Duration(milliseconds: 60),
+          speed: const Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
           " Recherche d'un stage et alternance 2023",
-          speed: Duration(milliseconds: 60),
+          speed: const Duration(milliseconds: 60),
         ),
       ],
     );
@@ -136,7 +135,7 @@ class FlutterCodedText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text.rich(
+    return const Text.rich(
       TextSpan(
         text: "",
         children: [

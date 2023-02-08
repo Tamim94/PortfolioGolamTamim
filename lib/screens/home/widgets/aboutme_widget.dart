@@ -30,7 +30,7 @@ class Abouts extends StatelessWidget {
             about.text!,
             maxLines: 6,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(height: 1.5,color: Colors.white),//1.5
+            style: const TextStyle(height: 1.5,color: Colors.white),//1.5
           )
         ],
       ),

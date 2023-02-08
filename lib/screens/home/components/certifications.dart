@@ -2,10 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_tamim/models/certifications.dart';
 import 'package:portfolio_tamim/responsive.dart';
-import 'package:portfolio_tamim/screens/home/components/projects.dart';
 
 import '../../../constants.dart';
-import '../widgets/projectwidgets.dart';
 import '../widgets/certification_widget.dart';
 
 class MyCertifications extends StatelessWidget {
@@ -21,10 +19,10 @@ class MyCertifications extends StatelessWidget {
       children: [
         Text(
           "\nMes Certifications :",
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: defaultPadding),
-        Responsive(
+        const Responsive(
           mobile: ProjectsGridView(
             crossAxisCount: 1,
             childAspectRatio: 1.7,
@@ -52,7 +50,7 @@ class ProjectsGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: demo_certifications.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: crossAxisCount,

@@ -15,7 +15,7 @@ class Stage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 400,
-      padding: EdgeInsets.all(defaultPadding),
+      padding: const EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,7 +25,7 @@ class Stage extends StatelessWidget {
             style: Theme
                 .of(context)
                 .textTheme
-                .subtitle2,
+                .titleSmall,
           ),
           Text(recommendation.source!),
           const SizedBox(height: defaultPadding),
@@ -33,7 +33,7 @@ class Stage extends StatelessWidget {
             recommendation.text!,
             maxLines: 6,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(height: 1.5),
+            style: const TextStyle(height: 1.5),
           )
         ],
       ),

@@ -1,5 +1,5 @@
 name: portfolio_tamim
-description: A new Flutter project.
+description: Portfolio.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,12 +35,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   animated_text_kit: ^4.2.2
-  flutter_svg: ^1.1.6
-  google_fonts: ^3.0.1
+  flutter_svg: ^2.0.0
+  google_fonts: ^4.0.3
   url_launcher: ^6.1.8
   footer: ^0.0.4
   video_player: ^2.5.1
-  contact_form: ^1.0.5
   mb_contact_form: ^0.0.2
   firebase_core: ^2.4.1
 

@@ -1,4 +1,4 @@
-import 'package:contact_form/contact_form.dart';
+
 import 'package:flutter/material.dart';
 import 'package:footer/footer.dart';
 import 'package:portfolio_tamim/screens/home/components/aboutme.dart';
@@ -13,7 +13,6 @@ import 'package:portfolio_tamim/screens/home/components/projects.dart';
 import 'package:portfolio_tamim/screens/home/components/Stages.dart';
 import 'package:portfolio_tamim/screens/home/components/certifications.dart';
 import 'package:portfolio_tamim/screens/home/widgets/footer_widget.dart';
-import 'package:contact_form/contact_form.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

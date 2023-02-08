@@ -21,7 +21,7 @@ class Stages extends StatelessWidget {
             style: Theme
                 .of(context)
                 .textTheme
-                .headline6,
+                .titleLarge,
           ),
           const SizedBox(height: defaultPadding),
           SingleChildScrollView(

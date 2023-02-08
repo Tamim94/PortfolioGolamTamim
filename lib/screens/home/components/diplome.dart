@@ -3,10 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_tamim/models/diplomes.dart';
 import 'package:portfolio_tamim/responsive.dart';
-import 'package:portfolio_tamim/screens/home/components/projects.dart';
 
 import '../../../constants.dart';
-import '../widgets/projectwidgets.dart';
+
 import 'package:portfolio_tamim/screens/home/widgets/diplome_widget.dart';
 
 class MyDiplomes extends StatelessWidget {
@@ -22,10 +21,10 @@ class MyDiplomes extends StatelessWidget {
       children: [
         Text(
           "Ma Scolarité :",
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: defaultPadding),
-        Responsive(
+        const Responsive(
           mobile: ProjectsGridView(
             crossAxisCount: 1,
             childAspectRatio: 1.7,
@@ -53,7 +52,7 @@ class ProjectsGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: demo_diplomes.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: crossAxisCount,
