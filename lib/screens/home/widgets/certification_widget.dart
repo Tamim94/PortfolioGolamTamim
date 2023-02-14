@@ -24,17 +24,17 @@ class Certification extends StatelessWidget { //ITEMBUILDER in the certif
         children: [
           Text(
             certifications.title,
-            maxLines: 2,
+            maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: Theme.of(context).textTheme.titleSmall,
           ),
           const Spacer(),
-         /* Text(
+         Text(
             certifications.description!,
-            maxLines: Responsive.isMobileLarge(context) ? 3 : 4,
+            maxLines: Responsive.isMobileLarge(context) ? 1 : 2, //
             overflow: TextOverflow.ellipsis,
             style: TextStyle(height: 1.5),
-          ),*/
+          ),
           const Spacer(),
           TextButton(
             onPressed: () async {

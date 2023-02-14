@@ -14,7 +14,7 @@ class Abouts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 800,//400
+      width: 500,//400
       padding: const EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(
@@ -28,7 +28,7 @@ class Abouts extends StatelessWidget {
           const SizedBox(height: defaultPadding),*/
           Text(
             about.text!,
-            maxLines: 6,
+            maxLines: 20,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(height: 1.5,color: Colors.white),//1.5
           )

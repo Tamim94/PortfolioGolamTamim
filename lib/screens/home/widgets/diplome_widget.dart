@@ -21,18 +21,19 @@ class Diplome extends StatelessWidget {
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text(
           diplomes.title,
-          maxLines: 2,
+          maxLines: 4,//2 Taille title
           overflow: TextOverflow.ellipsis,
           style: Theme.of(context).textTheme.titleSmall,
         ),
-        const Spacer(), // if i want descriptions
+       // const Spacer(), // if i want descriptions
          Text(
             diplomes.description,
-            maxLines: Responsive.isMobileLarge(context) ? 3 : 4,
+            maxLines: Responsive.isMobileLarge(context) ? 3 : 4 , //3:4
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(height: 1.5),
           ),
-        const Spacer(),//When i'm gonna add degrees screen shot
+
+        //const Spacer(),//When i'm gonna add degrees screen shot
         /* TextButton(
             onPressed: () async {
               if (await canLaunch (diplomes.link ?? '')

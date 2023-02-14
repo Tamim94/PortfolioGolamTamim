@@ -24,11 +24,11 @@ class MyCertifications extends StatelessWidget {
         const SizedBox(height: defaultPadding),
         const Responsive(
           mobile: ProjectsGridView(
-            crossAxisCount: 1,
-            childAspectRatio: 1.7,
+            crossAxisCount: 2,//DIVISE EN BLOCS
+            childAspectRatio: 1,//HAUTEUR MOBILE
           ),
-          mobileLarge: ProjectsGridView(crossAxisCount: 2),
-          tablet: ProjectsGridView(childAspectRatio: 1.1),
+          mobileLarge: ProjectsGridView(crossAxisCount: 2),//2
+          tablet: ProjectsGridView(childAspectRatio: 1.1),//1.1
           desktop: ProjectsGridView(),
         )
       ],
@@ -39,8 +39,8 @@ class MyCertifications extends StatelessWidget {
 class ProjectsGridView extends StatelessWidget {
   const ProjectsGridView({
     Key? key,
-    this.crossAxisCount = 5,// size of certif blocks
-    this.childAspectRatio = 1.3,
+    this.crossAxisCount = 5,// size of certif blocks 5
+    this.childAspectRatio = 1.3,//1.3
   }) : super(key: key);
 
   final int crossAxisCount;

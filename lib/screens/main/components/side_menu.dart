@@ -66,7 +66,7 @@ class SideMenu extends StatelessWidget {
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
                       onPressed: () async {
-                        const url = 'https://bb8d0c39-4de1-4690-9c13-013194a8580b.filesusr.com/ugd/0bdab9_38d704171592422d952768b84f5dafe8.pdf';
+                        const url = 'https://firebasestorage.googleapis.com/v0/b/portfoliogolamtamim.appspot.com/o/Copie%20de%20GOLAM%20TAMIM%20(1).pdf?alt=media&token=8f615784-1d2d-4dde-aa3d-e32715';
                         if (await canLaunch(url)) {
                           await launch(url);
                         } else {

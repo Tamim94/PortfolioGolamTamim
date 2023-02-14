@@ -22,7 +22,7 @@ class Knowledges extends StatelessWidget {
               vertical: defaultPadding),
           child: Text(
             "Technologies touché",
-            style: Theme.of(context).textTheme.subtitle2,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
         KnowledgeText(text: "Linux Ubuntu, Debian"),
@@ -30,19 +30,6 @@ class Knowledges extends StatelessWidget {
         KnowledgeText(text: "Wix,WordPress"),
         KnowledgeText(text: "Ubuntu server, Windows Server 2019"),
         KnowledgeText(text: "Github"),
-        Padding(
-          padding: const EdgeInsets.symmetric(
-              vertical: defaultPadding),
-          child: Text(
-            "Certifications",
-            style: Theme.of(context).textTheme.subtitle2,
-          ),
-        ),
-        KnowledgeText(text: "Udemy React 2021"),
-        KnowledgeText(text: "Pix"),
-        //KnowledgeText(text: "--"),
-        //KnowledgeText(text: "--"),
-       // KnowledgeText(text: "--"),
 
 
       Padding(
@@ -50,7 +37,7 @@ class Knowledges extends StatelessWidget {
             vertical: defaultPadding),
         child: Text(
           "Diplomes",
-          style: Theme.of(context).textTheme.subtitle2,
+          style: Theme.of(context).textTheme.titleSmall,
         ),
       ),
       KnowledgeText(text: "Bac ES 2020"),

@@ -13,15 +13,13 @@ class Aboutme extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
-      child: Column(
+      child: MediaQuery.of(context).size.width > 200
+          ? Column(
         crossAxisAlignment: CrossAxisAlignment.stretch, //alignement
         children: [
           Text(
             "About me",
-            style: Theme
-                .of(context)
-                .textTheme
-                .titleLarge,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: defaultPadding),
           SingleChildScrollView(
@@ -29,16 +27,38 @@ class Aboutme extends StatelessWidget {
             child: Row(
               children: List.generate(
                 demo_about.length,
-                    (index) =>
-                    Padding(
-                      padding: const EdgeInsets.only(right: defaultPadding),
-                      child: Abouts(
-                        about: demo_about[index],
-                      ),
-                    ),
+                    (index) => Padding(
+                  padding: const EdgeInsets.only(right: defaultPadding),
+                  child: Abouts(
+                    about: demo_about[index],
+                  ),
+                ),
               ),
             ),
           ),
+        ],
+      )
+          : Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch, //alignement
+        children: [
+        Text(
+        "About me",
+        style: Theme.of(context).textTheme.titleLarge,
+      ),
+      const SizedBox(height: defaultPadding),
+      SingleChildScrollView(
+        child: Row(
+          children: List.generate(
+            demo_about.length,
+                (index) => Padding(
+              padding: const EdgeInsets.only(right: defaultPadding),
+              child: Abouts(
+                about: demo_about[index],
+              ),
+            ),
+          ),
+        ),
+      ),
         ],
       ),
     );

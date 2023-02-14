@@ -15,13 +15,13 @@ List<Diplomes> demo_diplomes = [
     link: "",
   ),
   Diplomes(
-    title: "BTS SIO SLAM 2020-2022 Lycée René Descartes",
-    description: "J'ai effectué 2 ans de BTS SIO option SLAM ",
+    title: "BTS SIO SLAM 2020-2022 ",
+    description: "J'ai effectué 2 ans de BTS SIO option SLAM dans le Lycée René Descartes ",
     link: "",
   ),
   Diplomes(
-    title: "Bac ES 2020 Lycée Pablo Picasso",
-    description: "J'ai fais un bac ES car j'hésitait entre avoir un carrière vers le Web Marketing et le Développement Web,Mobile",
+    title: "Bac ES 2020 ",
+    description: "J'ai fais un bac ES dans le Lycée Pablo Picasso car j'hésitait entre avoir un carrière vers le Web Marketing et le Développement Web,Mobile",
     link:
         "",
   ),

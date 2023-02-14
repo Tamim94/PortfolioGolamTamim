@@ -26,8 +26,8 @@ class MyDiplomes extends StatelessWidget {
         const SizedBox(height: defaultPadding),
         const Responsive(
           mobile: ProjectsGridView(
-            crossAxisCount: 1,
-            childAspectRatio: 1.7,
+            crossAxisCount: 1,//1
+            childAspectRatio: 2.5,//1.7
           ),
           mobileLarge: ProjectsGridView(crossAxisCount: 2),
           tablet: ProjectsGridView(childAspectRatio: 1.1),
@@ -42,7 +42,7 @@ class ProjectsGridView extends StatelessWidget {
   const ProjectsGridView({
     Key? key,
     this.crossAxisCount = 4,// size of certif blocks
-    this.childAspectRatio = 1.3,
+    this.childAspectRatio = 1.3,//1.3
   }) : super(key: key);
 
   final int crossAxisCount;
