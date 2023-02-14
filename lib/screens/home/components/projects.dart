@@ -24,7 +24,7 @@ class MyProjects extends StatelessWidget {
         const Responsive(
           mobile: ProjectsGridView(
             crossAxisCount: 1,//1
-            childAspectRatio: 1.9,//1.7
+            childAspectRatio: 1.5,//hauteur sur tel du bloc
           ),
           mobileLarge: ProjectsGridView(crossAxisCount: 2),
           tablet: ProjectsGridView(childAspectRatio: 1.1),
@@ -39,7 +39,7 @@ class ProjectsGridView extends StatelessWidget {
   const ProjectsGridView({
     Key? key,
     this.crossAxisCount = 3, // peut etre block bts
-    this.childAspectRatio = 1.3,
+    this.childAspectRatio = 1.3,//1.3 au cas ou!!
   }) : super(key: key);
 
   final int crossAxisCount;

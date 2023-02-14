@@ -13,7 +13,7 @@ List<Project> demo_projects = [
     title: "Mon Projet Personel",
     description:
     "La page que vous regardez actuellement est mon portfolio que j'ai développé à l'aide d'un tuto pour apprendre Flutter et le language Dart il est hebergé sur Firebase mais n'utilise pas de base de données que j'essaie actuellement d'implementer je suis toujours en train de le modifier cependant vraiment motivé a en apprendre plus du framework!." ,
-    link:"https://github.com/Tamim94/PortfolioGolamTamim",
+    link:"https://github.com/Tamim94/PortfolioGolamTamim/tree/master",
   ),
   Project(
     title: "Projet Django Estiamflix",

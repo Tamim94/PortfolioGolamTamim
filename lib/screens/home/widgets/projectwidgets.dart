@@ -30,7 +30,7 @@ class ProjectCard extends StatelessWidget {
           const Spacer(),
           Text(
             project.description,
-            maxLines:10, //Responsive.isMobileLarge(context) ? 3 : 3, //
+            maxLines:30, //Responsive.isMobileLarge(context) ? 3 : 3, //
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(height: 1.5),
           ),
