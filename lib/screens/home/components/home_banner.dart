@@ -57,11 +57,11 @@ class HomeBanner extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: defaultPadding * 2,
                           vertical: defaultPadding),
-                      backgroundColor: primaryColor,
+                      backgroundColor:  highlight,
                     ),
                     child: const Text(
-                      "Le cursus Bachelor Data & App Design",
-                      style: TextStyle(color: darkColor),
+                      "Cursus Bachelor Data & App Design chez éstiam",
+                      style: TextStyle(color: bodyTextColor),
                     ),
                   ),
               ],
@@ -111,6 +111,10 @@ class AnimatedText extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedTextKit(
       animatedTexts: [
+        TyperAnimatedText(
+          " Etudiant en Bachelor chez Estiam ",
+          speed: const Duration(milliseconds: 60),
+        ),
         TyperAnimatedText(
           " Stage en web à distance  Wix 2021 ",
           speed: const Duration(milliseconds: 60),

@@ -80,14 +80,14 @@ class Essentialinfo extends StatelessWidget {
                   ),
                   Essentials(
                     counter: AnimatedCounter(
-                      value: 3,
+                      value: 4,
                       text: "",
                     ),
                     label: "Certifications ",
                   ),
                   Essentials(
                     counter: AnimatedCounter(
-                      value: 2,
+                      value: 1,
                       text: "",
                     ),
                     label: "Diplômes",

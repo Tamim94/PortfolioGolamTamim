@@ -9,6 +9,8 @@ final List<About> demo_about = [
     name: "",
     source: "",
     text:
-        """Bonjour,\n Je m’appelle Golam Tamim,j'ai 21 ans et je suis actuellement étudiant en 2e année de Bachelor App & Data chez Estiam.\nJ'ai une passion pour le développement des applications/jeux mobiles qui a confirmé mon intérêt pour l'informatique.\nJe recherche un Stage de 2 mois entre juillet / septembre 2023 et/ou avec Alternance pour l'année 2023-2024 """,
+        """Bonjour,\nJe m’appelle Golam Tamim, j'ai 21 ans, j'ai une passion pour le développement d'applications/jeux mobile qui a confirmé mon intérêt pour le développement mobile.
+\nJe suis actuellement étudiant Bachelor App & Design en 2e année chez Estiam Paris.
+\nJe suis actuellement a la recherche d'un stage de 2 mois (entre Juillet et Septembre) et d'une alternance en Développement Web & mobile pour l'année 2023-2024 | 4 jours / semaine en entreprise """,
   )
 ];

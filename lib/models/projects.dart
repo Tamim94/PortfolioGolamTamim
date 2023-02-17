@@ -30,7 +30,7 @@ List<Project> demo_projects = [
   Project(
     title: "Mini projets avec Java sur replit",
     description:
-   """"Pendant le Module de java nous avons effectuer quelque mini projet tel que une calculatrice simple en swing , ou des classe et objets animal cliquez "Repls" dans ma page Replic dans le lien ci dessous:""",
+   """Pendant le Module de java nous avons effectuer quelque mini projet tel que une calculatrice simple en swing , ou des classe et objets animal cliquez "Repls" dans ma page Replic dans le lien ci dessous:""",
       link:"https://replit.com/@TAMIMGOLAM",
   ),
   Project(

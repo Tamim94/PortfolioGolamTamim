@@ -79,6 +79,8 @@ flutter:
      - assets/images/bgg.jpg
      - assets/images/peakpx.jpg
      - assets/images/Tamim.jpg
+     - assets/icons/Coffee-Cup-Silhouette.svg
+     - assets/icons/takeaway-coffee.svg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

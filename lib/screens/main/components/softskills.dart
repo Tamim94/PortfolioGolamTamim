@@ -30,6 +30,7 @@ class Knowledges extends StatelessWidget {
         KnowledgeText(text: "Wix,WordPress"),
         KnowledgeText(text: "Ubuntu server, Windows Server 2019"),
         KnowledgeText(text: "Github"),
+        KnowledgeText(text: "React,Code igniter"),
 
 
       Padding(

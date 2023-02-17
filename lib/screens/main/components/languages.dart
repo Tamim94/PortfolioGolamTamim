@@ -26,7 +26,7 @@ class Coding extends StatelessWidget {
           label: "Java",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.60,
+          percentage: 0.50,
           label: "Python",
         ),
         AnimatedLinearProgressIndicator(
@@ -38,7 +38,7 @@ class Coding extends StatelessWidget {
           label: "CSS",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.40,
+          percentage: 0.20,
           label: "JavaScript",
         ),
         AnimatedLinearProgressIndicator(
@@ -52,6 +52,10 @@ class Coding extends StatelessWidget {
         AnimatedLinearProgressIndicator(
           percentage: 0.30,
           label: "PHP",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.25,
+          label: "Arduino",
         ),
       ],
     );
